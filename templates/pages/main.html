@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <button id='up-btn'>
+    <img src="{% static 'img/buttons/up.png' %}" alt="">
+  </button>
+  {% include 'pages/main-blocks/main-page.html' %}
+  {% include 'pages/main-blocks/who-we-are.html' %}
+  {% include 'pages/main-blocks/projects.html' %}
+  {% include 'pages/main-blocks/presenters.html' %}
+  {% include 'pages/main-blocks/staff.html' %}
+  {% include 'pages/main-blocks/contact-us.html' %}
+
+
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/scroll_button.js' %}"></script>
+{% endblock %}
