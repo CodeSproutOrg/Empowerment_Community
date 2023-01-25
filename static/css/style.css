@@ -96,15 +96,17 @@ header img {width: 25%;}
     display:flex;
     align-items: center;
     justify-content: center;
-    margin-top: -2%;
-    overflow: hidden;
-    transform: translateY(20%);
+    transform: translateY(15%);
 }
 
-#projects {display: inline-flex; width: 80%; height: 320px;}
+#projects {display: inline-flex; height: 320px; overflow: hidden;}
 
-.project {display:flex; overflow: hidden; width: 0;}
-.active {width: 100%;}
+.project {
+    opacity: 0;
+    display: flex;
+    width: 0;
+    transition: all 0.8s ease;}
+.project.active {width: 100%; opacity: 1;}
 
 .project img {width:350px;}
 .project-content {
@@ -120,7 +122,7 @@ header img {width: 25%;}
     border: none;
     padding: 2%;
 }
-.project-content a {text-decoration: none;}
+.project-content a {text-decoration: none; color: black;}
 
 #next-btn {border: none; background-color: transparent; width: 15%;}
 #next-btn img {width: 100%;}

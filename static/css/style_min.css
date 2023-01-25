@@ -1,5 +1,5 @@
 @media screen and (max-width: 950px) {
-    #up-btn {width:60px; height:60px;}
+    #up-btn {width:60px; height:60px; right: 20px;}
 
     #main-page {padding: 5% 40% 5% 5%;}
 
@@ -14,30 +14,65 @@
 @media screen and (max-width: 768px) {
     #projects {height: 300px;}
     .project img {width: 300px;}
-    .project-content {}
+
+    #next-btn {width: 15%;}
 }
 
-@media screen and (max-width: 425px) {
-    #main-page {padding: 5%;}
+@media screen and (max-width: 640px) {
+    #main-page {padding: 5% 25% 5% 5%;}
 
-    #who-we-are {padding: 5%;}
+    #projects-page h1 {font-size: 120px; transform: translateY(-50%);}
+    #project-slider {transform: translateY(5%);}
+    #projects {align-items: center;}
+
+    .project {flex-direction: column;}
+    .project img {display: none;}
+
+    #next-btn {width: 20%;}
+
+    #presenter-list {flex-direction: column;}
+}
+
+@media screen and (max-width: 590px) {
+    #projects-page h1 {font-size: 100px;}
+    #staff {padding: 5% 30% 20% 5%;}
+}
+
+@media screen and (max-width: 500px) {
+    #projects-page h1 {font-size: 85px;}
 
     #sections {flex-direction: column;}
     #sections button {width: 100%;}
 
-    #projects-page h1 {font-size: 70px;}
-    .project {flex-direction: column;}
-    .project img {display: none;}
+    #staff {padding: 5% 15% 20% 5%;}
+}
 
-    #presenter-list {flex-direction: column;}
+@media screen and (max-width: 440px) {
+    #main-page {padding: 5%;}
+
+    #who-we-are {padding: 5%;}
+    #who-we-are h1 {text-align: center;}
+
+    #projects-page h1 {font-size: 70px;}
+
+
     #presenters h1 {font-size: 35px;}
 
     #staff {padding: 5%;}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     #main-page h1 {font-size: 40px;}
 
     #staff h1 {text-align: center;}
     #staff ul {text-align: center;}
+
+    form div {flex-direction: column; margin-bottom: 4%;}
+    form div input {width: 100%; padding: 3% 0;}
+}
+
+@media screen and (max-width: 350px) {
+    #main-page h1 {font-size: 35px;}
+    #main-page h3 {font-size: 20px;}
+    #projects-page h1 {font-size: 60px;}
 }

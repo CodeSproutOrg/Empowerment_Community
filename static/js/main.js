@@ -45,7 +45,7 @@ function scrolling() {
 let up_btn = document.getElementById('up-btn');
 up_btn = up_btn.addEventListener('click', up_scroll);
 function up_scroll() {
-    let main = document.getElementsByTagName('header')[0];
+    let main = document.getElementById('main-page');
     main.scrollIntoView({
         behavior: "smooth",
         block: "start"
