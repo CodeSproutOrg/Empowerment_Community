@@ -99,7 +99,7 @@ header img {width: 25%;}
     transform: translateY(15%);
 }
 
-#projects {display: inline-flex; height: 320px; overflow: hidden;}
+#projects {display: inline-flex; height: 270px; overflow: hidden;}
 
 .project {
     opacity: 0;
@@ -121,6 +121,7 @@ header img {width: 25%;}
     background-color: #E7E6E2;
     border: none;
     padding: 2%;
+    width: 40%;
 }
 .project-content a {text-decoration: none; color: black;}
 
@@ -164,6 +165,7 @@ header img {width: 25%;}
     background-color: #494949;
     color: white;
 }
+#contact-us h1 {font-weight: 400;}
 form {
     display: flex;
     flex-direction: column;
