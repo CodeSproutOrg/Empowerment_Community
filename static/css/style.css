@@ -105,7 +105,7 @@ header img {width: 25%;}
     opacity: 0;
     display: flex;
     width: 0;
-    transition: all 0.8s ease;}
+    transition: opacity 1s ease}
 .project.active {width: 100%; opacity: 1;}
 
 .project img {width:350px;}
@@ -199,36 +199,6 @@ textarea::placeholder {
 form button {
     margin: 2%;
     width: 25%;
-}
-
-
-
-/*
-.header-links {color: #F4F1EC}
-main {margin-top: 50px;}
-
-h1 {font-size: x-large;}
-p {font-size: 16px;}
-a {
-    color: #ababab;
-    text-decoration: none;
-}
-a:hover {color: #ababab;}
-.color {color: #CBB2A4;}
-.second-color {color: white;}
-.b-color {background-color: #CBB2A4;}
-
-
-
-#error {padding: 5%;}
-#error-message {
-    font-family: "Quicksand";
-    font-size: 80px;
-}
-#error-back-href {
-    font-family: "Quicksand";
-    font-size: 40px;
-    color: black;
 }
 
 
