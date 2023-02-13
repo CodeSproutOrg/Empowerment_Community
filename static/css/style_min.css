@@ -1,30 +1,48 @@
 @media screen and (max-width: 950px) {
+    header {flex-direction: column;}
+    header a {text-align: center;}
+    #sections {justify-content: center;}
+
     #up-btn {width:60px; height:60px; right: 20px;}
 
     #main-page {padding: 5% 40% 5% 5%;}
 
-    #projects-page h1 {font-size: 130px;}
-    .project-content p {font-size: 10px;}
+    #projects-page h1 {font-size: 180px;}
+    .project-content {width: 45%;}
+
 
     #next-btn {width: 10%;}
 }
 
+@media screen and (max-width: 900px) {
+    #projects-page h1 {font-size: 160px;}
+    .project-content p {font-size: 12px;}
+}
+@media screen and (max-width: 800px) {
+    .project img {width: 315px;}
+    .project-content {width: 41%;}
+    #projects-page h1 {font-size: 150px;}
+    .project-content p {font-size: 11px;}
+}
+
 @media screen and (max-width: 768px) {
-    header {flex-direction: column;}
-    header a {text-align: center; width: 50%;}
+    #sections {align-items: flex-start;}
+    #sections button {font-size: 14px; padding: 2%; text-align: center; }
 
-    #sections {width: 100%;}
-    #sections button {margin: 1%;}
 
+    .project img {width: 275px;}
     #projects {height: 300px;}
-    .project img {width: 300px;}
+    #projects-page h1 {font-size: 135px;}
+    .project-content a {width: 100%;}
+
 
     #next-btn {width: 15%;}
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 645px) {
     #main-page {padding: 5% 25% 5% 5%;}
 
+    .project-content {width: 80%;}
     #projects-page h1 {font-size: 120px; transform: translateY(-50%);}
     #project-slider {transform: translateY(5%);}
     #projects {align-items: center;}
