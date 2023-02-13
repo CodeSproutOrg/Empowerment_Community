@@ -9,6 +9,7 @@
 
     #projects-page h1 {font-size: 180px;}
     .project-content {width: 45%;}
+    .project-content h2 {font-size: 27px;}
 
 
     #next-btn {width: 10%;}
@@ -16,7 +17,9 @@
 
 @media screen and (max-width: 900px) {
     #projects-page h1 {font-size: 160px;}
+    .project-content h2 {font-size: 25px;}
     .project-content p {font-size: 12px;}
+
 }
 @media screen and (max-width: 800px) {
     .project img {width: 315px;}
@@ -33,6 +36,7 @@
     .project img {width: 275px;}
     #projects {height: 300px;}
     #projects-page h1 {font-size: 135px;}
+    .project-content h2 {font-size: 25px;}
     .project-content a {width: 100%;}
 
 
