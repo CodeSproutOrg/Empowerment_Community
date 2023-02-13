@@ -3,8 +3,6 @@
 
     #main-page {padding: 5% 40% 5% 5%;}
 
-    #who-we-are {padding: 25% 40% 5% 5%;}
-
     #projects-page h1 {font-size: 130px;}
     .project-content p {font-size: 10px;}
 
@@ -12,6 +10,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    header {flex-direction: column;}
+    header a {text-align: center; width: 50%;}
+
+    #sections {width: 100%;}
+    #sections button {margin: 1%;}
+
     #projects {height: 300px;}
     .project img {width: 300px;}
 
@@ -39,10 +43,10 @@
 }
 
 @media screen and (max-width: 500px) {
-    #projects-page h1 {font-size: 85px;}
-
     #sections {flex-direction: column;}
     #sections button {width: 100%;}
+
+    #projects-page h1 {font-size: 85px;}
 
     #staff {padding: 5% 15% 20% 5%;}
 }
@@ -50,11 +54,7 @@
 @media screen and (max-width: 440px) {
     #main-page {padding: 5%;}
 
-    #who-we-are {padding: 5%;}
-    #who-we-are h1 {text-align: center;}
-
     #projects-page h1 {font-size: 70px;}
-
 
     #presenters h1 {font-size: 35px;}
 

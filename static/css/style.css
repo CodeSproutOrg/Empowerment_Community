@@ -6,19 +6,32 @@ body {
 button {font-family: "Cinzel", sans-serif;}
 .white {color: white;}
 .gray {color: #494949;}
+.brown {color: #766052;}
 
 header {
-    width: 100%;
+    padding: 2% 5%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #766052;
 }
 header a {
-    display: flex;
-    justify-content: center;
+    width: 25%;
 }
-header img {width: 25%;}
+header img {width: 50%;}
+#sections {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#sections button {
+    font-size: 15px;
+    padding: 3%;
+    margin: 1% 2% 1% 0;
+    background-color: transparent;
+    border: none;
+}
 
 #up-btn {
     position: fixed;
@@ -51,31 +64,6 @@ header img {width: 25%;}
     font-weight: 400;
 }
 #main-page h3 {margin-top: 2%;}
-#sections {
-    display: flex;
-    flex-wrap: wrap;
-}
-#sections button {
-    padding: 5%;
-    margin: 1% 2% 1% 0;
-    width: 45%;
-    background-color: #D0BAB0;
-    border: none;
-    color: white;
-}
-
-#who-we-are {
-    padding: 25% 50% 5% 5%;
-    background-image: url(../img/main-page/who-we-are.png);
-    background-size: cover;
-}
-#who-we-are-text {
-    padding: 3%;
-    text-align: center;
-    background-color: #494949;
-    color: white;
-    font-size: small;
-}
 
 
 /* Projects */
