@@ -2,6 +2,7 @@
     header {flex-direction: column;}
     header a {text-align: center;}
     #sections {justify-content: center;}
+    #sections button {padding: 1%;}
 
     #up-btn {width:60px; height:60px; right: 20px;}
 
@@ -41,6 +42,11 @@
 
 
     #next-btn {width: 15%;}
+
+
+    #contact-us {flex-direction: column;}
+    #contact-us-title {width: 90%;}
+    #contact-us-form {width: 90%;}
 }
 
 @media screen and (max-width: 645px) {

@@ -4,12 +4,12 @@ body {
 }
 
 button {font-family: "Cinzel", sans-serif;}
-.white {color: white;}
+.white {color: #DFDDD9;}
 .gray {color: #494949;}
 .brown {color: #766052;}
 
 header {
-    padding: 2% 5%;
+    padding: 1% 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@ header {
 header a {
     width: 25%;
 }
-header img {width: 75%;}
+header img {width: 55%;}
 #sections {
     width: 100%;
     display: flex;
@@ -27,7 +27,7 @@ header img {width: 75%;}
 }
 #sections button {
     font-size: 15px;
-    padding: 1% 2%;
+    padding: 1%;
     text-align: start;
     background-color: transparent;
     border: none;
@@ -125,7 +125,7 @@ header img {width: 75%;}
 #next-btn {border: none; background-color: transparent; width: 15%;}
 #next-btn img {width: 100%;}
 
-/* */
+/* Presenters */
 #presenters {padding: 5%;}
 #presenters h1 {
     text-align: center;
@@ -142,6 +142,7 @@ header img {width: 75%;}
     text-align: center;
     background-color: #E7E6E2;
 }
+.presenter img {width: 100%;}
 
 /* Staff */
 #staff {
@@ -158,28 +159,45 @@ header img {width: 75%;}
 
 /* Contact Us */
 #contact-us {
-    padding: 5% 10%;
-    background-color: #494949;
-    color: white;
+    display: flex;
+    align-items: stretch;
 }
-#contact-us h1 {font-weight: 400;}
-form {
+
+#contact-us-title {
+    padding: 5%;
+    width: 50%;
+    background-color: #766052;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
-form div {display: flex;}
+#contact-us-title h1 {font-weight: 400; font-size: 44px; margin: 0;}
+#contact-us-title p {font-size: 30px;}
+#contact-us-title a {text-decoration: none;}
+
+#contact-us-form {
+    padding: 5%;
+    width: 50%;
+    background-color: #DFDDD9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 input {
-    margin: 2% 4% 2% 0;
-    width: 35%;
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 5%;
     border-width: 0 0 1px 0;
-    border-color: white;
+    border-color: #766052;
     background-color: transparent;
     font-family: "Cinzel", sans-serif;
-    color: white;
+    color: #766052;
+    font-size: 20px;
 }
 input::placeholder {
-    color: white;
+    color: #766052;
     font-family: "Cinzel", sans-serif;
+    font-size: 20px;
 }
 textarea {
     border: none;
@@ -187,18 +205,22 @@ textarea {
     margin-top: 2%;
     width: 100%;
     font-family: "Cinzel", sans-serif;
-    color: white;
+    color: #766052;
+    font-size: 20px;
 }
 textarea::placeholder {
-    color: white;
+    color: #766052;
     font-family: "Cinzel", sans-serif;
+    font-size: 20px;
 }
-form button {
-    margin: 2% 0;
-    width: 35%;
+#contact-us-form button {
+    background: transparent;
+    padding: 2% 5%;
+    width: 30%;
+    border: 1px solid #766052;
 }
 
-
+/*
 .shadow {
     text-shadow:
         0 0 1px #fff,
