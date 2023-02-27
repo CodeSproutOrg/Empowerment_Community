@@ -1,13 +1,7 @@
-from .models import UserPost
-from django.forms import ModelForm, TextInput, Textarea
+from django import forms
 
 
-class UserPostForm(ModelForm):
-    class Meta:
-        model = UserPost
-        fields = ['name', 'post']
-
-        widgets = {
-            'name': TextInput(attrs={'placeholder': 'Name'}),
-            'post': Textarea(attrs={'placeholder': 'Tell us your story'})
-        }
+class ContactForm(forms.Form):
+    name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'placeholder': 'NAME'}))
+    email = forms.EmailField(widget=forms.EmailInput(attrs={'placeholder': 'EMAIL'}))
+    feedback = forms.CharField(widget=forms.Textarea(attrs={'placeholder': 'WRITE YOUR FEEDBACK'}))

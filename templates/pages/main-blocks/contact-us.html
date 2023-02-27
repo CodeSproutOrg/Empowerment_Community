@@ -9,9 +9,9 @@
     </div>
     <form method="post" id="contact-us-form">
         {% csrf_token %}
-        <input name='name' placeholder="NAME">
-        <input name='email' placeholder="EMAIL">
-        <textarea name="feedback" cols="30" rows="10" placeholder="WRITE YOUR FEEDBACK"></textarea>
-        <button>Send</button>
+        {% for form_line in form %}
+            {{ form_line }}
+        {% endfor %}
+        <button type="submit">Send</button>
     </form>
 </div>

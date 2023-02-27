@@ -1,7 +1,8 @@
 import logging
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 
-from .mail_notification import feedback_notification
+from .forms import ContactForm
+from .func import feedback_func
 
 logging.basicConfig(
     level=logging.INFO,
@@ -12,14 +13,16 @@ logger = logging.getLogger(__name__)
 
 
 def index(request):
-    data = {"title": "Empowerment Community"}
-    if request.method == 'POST':
-        name = request.POST.get('name')
-        email = request.POST.get('email')
-        feedback = request.POST.get('feedback')
-        feedback_notification(name, email, feedback)
+    form = ContactForm(request.POST)
+    data = {
+        "title": "Empowerment Community",
+        'form': form,
+    }
+    if not form.is_valid():
         return render(request, "pages/main.html", context=data)
-    return render(request, "pages/main.html", context=data)
+    else:
+        feedback_func(form)
+        return render(request, "pages/main.html", context=data)
 
 
 def pageNotFound(request, exception):
